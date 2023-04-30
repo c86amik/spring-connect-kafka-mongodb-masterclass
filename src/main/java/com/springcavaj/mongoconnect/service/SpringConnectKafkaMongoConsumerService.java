@@ -20,10 +20,10 @@ public class SpringConnectKafkaMongoConsumerService {
 	
 private static final Logger LOGGER = LoggerFactory.getLogger(SpringConnectKafkaMongoConsumerService.class);
 	
-	@KafkaListener(topics = "kafka-mongo-topic", groupId = "mongo_connect",
+	@KafkaListener(topics = "kafka-mongo-source-topic", groupId = "mongo_connect",
 			containerFactory = "kafkaListenerContainerFactory")
 	public void consumeData(UserModel userModel) {
-		LOGGER.info("Consume Message from Kafka-Mongo Topic is : {}", userModel.toString());
+		LOGGER.info("Consume Message from Kafka-Mongo Source Topic is : {}", userModel.toString());
 	}
 
 }

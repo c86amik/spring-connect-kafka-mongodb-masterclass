@@ -27,10 +27,10 @@ public class SpringConnectKafkaMongoProducerService {
 	@Qualifier("kafkaJsonTemplate")
 	private KafkaTemplate<String, UserModel> kafkaJsonTemplate;
 	  
-	private final static String APACHE_KAFKA_TOPIC_NAME = "kafka-mongo-topic";
+	private final static String APACHE_KAFKA_TOPIC_NAME = "kafka-mongo-sink-topic";
 	  
 	public void send(UserModel userModel) {
-		LOGGER.info("Data to be sent to Kafka-Mongo Topic - {}", userModel);
+		LOGGER.info("Data to be sent to Kafka-Mongo Sink Topic - {}", userModel);
 		kafkaJsonTemplate.send(APACHE_KAFKA_TOPIC_NAME, userModel); 
 	}
 }
