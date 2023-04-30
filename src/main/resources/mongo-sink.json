@@ -1,0 +1,17 @@
+{
+    "name": "mongo-sink",
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "tasks.max": "1",
+    "topics": "<your-topic-name>",
+    "connection.uri": "mongodb://localhost:27017/spring",
+    "database": "spring",
+    "collection": "kafka_mongo",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "schema.ignore": "true",
+    "document.id.strategy": "com.mongodb.kafka.connect.sink.processor.id.strategy.ProvidedInValueStrategy",
+    "document.id.strategy.overwrite.existing": "true",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true"
+}

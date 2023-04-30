@@ -1,0 +1,12 @@
+{
+    "name": "mongo-source",
+    "config": {
+        "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
+        "tasks.max": "1",
+        "topics": "kafka-mongo-topic",
+        "connection.uri": "mongodb://localhost:27017",
+        "database": "spring",
+        "collection": "kafka_mongo",
+        "publish.full.document.only": true
+    }
+}
