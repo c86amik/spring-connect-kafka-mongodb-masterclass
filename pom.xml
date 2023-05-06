@@ -39,10 +39,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
+		<!-- Spring Kafka Dependency -->
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
+		<!-- Mongo Kafka Connector Dependency -->
 		<dependency>
 		    <groupId>org.mongodb.kafka</groupId>
 		    <artifactId>mongo-kafka-connect</artifactId>

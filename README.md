@@ -29,10 +29,15 @@
 <li>Command : <p>`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafka-mongo-source-topic`</p></li>
 <li>In the same CMD create another <strong>Topic named `kafka-mongo-sink-topic` that has 1 partition and 1 replica</strong></li>
 <li>Command : <p>`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafka-mongo-sink-topic`</p></li>
+<li>Now create 2 topics as `kafka-mongo-source-topic` and `kafka-mongo-sink-topic`</li>
+<li>Open a new CMD and <strong>Create the 1st Topic named `kafka-mongo-source-topic` that has 1 partition and 1 replica</strong></li>
+<li>Command : <p>`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafka-mongo-source-topic`</p></li>
+<li>Open a new CMD and <strong>Create the 2nd Topic named `kafka-mongo-sink-topic` that has 1 partition and 1 replica</strong></li>
+<li>Command : <p>`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafka-mongo-sink-topic`</p></li>
 </ol>
 After doing all the above necessary steps if all things goes fine then you have successfully run Apache Kafka in your local machine
 
-### Install Mongo-Kafka Conenctor
+### Install Mongo-Kafka Connector
 
 #### Below Steps are for the Windows OS
 
