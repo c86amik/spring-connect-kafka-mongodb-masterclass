@@ -71,18 +71,18 @@ After doing all the above necessary steps if all things goes fine then you have 
 * Start the Apache Kafka Server - <p>`.\bin\windows\kafka-server-start.bat .\config\server.properties`</p>
 * If you want to run the Mongo-Kafka Source Connector, then start the Mongo-Kafka Source Connector using the `mongo_source.json` - <p>`.\bin\connect-standalone.bat .\config\connect-standalone.properties .\config\mongo-source.json`</p>
 * Right Click on the application, select the <strong>Run As</strong> option, and then select <strong>Spring Boot App</strong>
-* The application will start in the port <strong>7116</strong>
+* The application will start in the port <strong>7119</strong>
 * Consumer will start consuming the messages from `kafka-mongo-source-topic` topic and log the message in the console
 * If you want to run the Mongo-Kafka Sink Connector, then start the Mongo-Kafka Sink Connector using the `mongo_sink.json` - <p>`.\bin\connect-standalone.bat .\config\connect-standalone.properties .\config\mongo-sink.json`</p>
 * Stop the before Mongo-Kafka Connector Source application
 * Right Click on the application, select the <strong>Run As</strong> option, and then select <strong>Spring Boot App</strong>\
-* The application will start again in the port <strong>7116</strong>
+* The application will start again in the port <strong>7119</strong>
 * For this testing you need Postman to be installed in your local machine
 * Open the Postman and test the REST Endpoints
 
 ### Testing using Postman
 <ol>
-<li>Post the JSON data to <strong>kafka-mongo-sink-topic</strong> topic - localhost:7116/kafkaMongoJson</li>
+<li>Post the JSON data to <strong>kafka-mongo-sink-topic</strong> topic - localhost:7119/kafkaMongoJson</li>
 </ol>
 
 #### Dummy JSON object
