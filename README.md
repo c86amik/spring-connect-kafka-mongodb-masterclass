@@ -6,7 +6,7 @@
 * [Java 1.8](https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html)
 * [Spring tool Suite](https://spring.io/tools) or [Eclipse](https://www.eclipse.org/downloads/packages/)
 * [Apache Maven](https://maven.apache.org/download.cgi)
-* [Git Bash](https://gramfile.com/git-bash-download/)
+* [Git Bash](https://git-scm.com/downloads)
 * [MongoDB](https://www.mongodb.com/try/download/community) - Download the Community Edition
 * [Robo 3T](https://robomongo.org/download) - MongoDB Client. Download Robo 3T Only
 * [Kafka](https://kafka.apache.org/downloads) - Download the Latest Version. Latest Version - <strong>Kafka 2.13</strong>
